@@ -1,0 +1,10 @@
+<div>
+  <h1 class="mat-h1">Great! Setup payment stream and enter!</h1>
+  <h2 class="mat-h2">Recap:</h2>
+  <div>
+    <p>Adults: {{people.adults}}</p>
+    <p>Students: {{people.students}}</p>
+    <p>Children: {{people.children}}</p>
+  </div>
+  <qr-code [value]="code" size="300" errorCorrectionLevel="M"></qr-code>
+</div>

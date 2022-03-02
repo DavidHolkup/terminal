@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-form',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -17,4 +18,9 @@ export class FormComponent implements OnInit {
     students: 0,
     children: 0,
   };
+
+  generateQrCode() {
+    const url = `QR/${this.people.adults}/${this.people.students}/${this.people.children}`
+    this.router.navigateByUrl(url);
+  }
 }

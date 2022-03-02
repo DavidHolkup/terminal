@@ -11,6 +11,7 @@ import {MatCardModule} from "@angular/material/card";
 import {MatIconModule} from "@angular/material/icon";
 import { SelectorComponent } from './form/selector/selector.component';
 import {MatButtonModule} from "@angular/material/button";
+import {QrCodeModule} from "ng-qrcode";
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {MatButtonModule} from "@angular/material/button";
         FormsModule,
         MatCardModule,
         MatIconModule,
-        MatButtonModule
+        MatButtonModule,
+        QrCodeModule
     ],
   providers: [],
   bootstrap: [AppComponent]
