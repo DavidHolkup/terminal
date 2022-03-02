@@ -1,0 +1,12 @@
+<mat-card>
+  <mat-card-title>{{title}}</mat-card-title>
+  <div class="buttons">
+    <button mat-mini-fab color="accent" aria-label="Remove one" (click)="change(-1)" [disabled]="isMinimum">
+      <mat-icon>remove</mat-icon>
+    </button>
+    <label class="huge">{{amount}}</label>
+    <button mat-mini-fab color="accent" aria-label="Add one" (click)="change(1)">
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+</mat-card>

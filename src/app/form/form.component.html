@@ -1,0 +1,14 @@
+<div class="global-wrapper">
+  <h1 class="mat-h1">Welcome to Solana swimming pool!</h1>
+  <h2 class="mat-h2">How many of you are there?</h2>
+  <div class="selectors">
+    <app-selector title="Adults" [(amount)]="people.adults"></app-selector>
+    <app-selector title="Students" [(amount)]="people.students"></app-selector>
+    <app-selector title="Children" [(amount)]="people.children"></app-selector>
+  </div>
+
+  <h2 class="mat-h2">
+    Done?
+  </h2>
+  <button mat-raised-button color="primary">Generate QR Code!</button>
+</div>
