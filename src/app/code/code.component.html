@@ -1,10 +1,17 @@
-<div>
+<div class="global-wrapper">
   <h1 class="mat-h1">Great! Setup payment stream and enter!</h1>
-  <h2 class="mat-h2">Recap:</h2>
-  <div>
-    <p>Adults: {{people.adults}}</p>
-    <p>Students: {{people.students}}</p>
-    <p>Children: {{people.children}}</p>
+  <div class="row">
+    <mat-card class="mat-elevation-z8">
+      <mat-card-title>Recap</mat-card-title>
+      <mat-card-content>
+        <p>Adults: {{people.adults}}</p>
+        <p>Students: {{people.students}}</p>
+        <p>Children: {{people.children}}</p>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="mat-elevation-z8">
+      <qr-code [value]="code" size="300" errorCorrectionLevel="M"></qr-code>
+    </mat-card>
   </div>
-  <qr-code [value]="code" size="300" errorCorrectionLevel="M"></qr-code>
+  <a mat-stroked-button class="huge" routerLink="/Welcome">Back Home</a>
 </div>
